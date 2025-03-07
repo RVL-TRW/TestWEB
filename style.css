@@ -1,65 +1,56 @@
-body{
+body {
     background-color: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    text-align: center;
 }
 
-.Heading{
-position: absolute;
-
-left: 45%;
-color: white;
-
-font-size: 2.5em;
+.Heading {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
-.Input-O1{
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+input {
     border: 2px solid rgb(35, 110, 35);
     height: 4vh;
     width: 15vw;
     border-radius: 5px;
-
-    position: absolute;
-    left: 43%;
-    margin: 5px;
-    top: 33%;
+    text-align: center;
+    font-size: 1em;
 }
 
-.Input-O2{
-    border: 2px solid rgb(35, 110, 35);
-    height: 4vh;
-    width: 15vw;
-    border-radius: 5px;
-
-    position: absolute;
-    left: 43%;
-    margin: 5px;
-    top: 40%;
-}
-
-.Start-btn{
+.Start-btn {
     background-color: transparent;
     border: 1px solid rgb(35, 110, 35);
-    color: #ffffff;
+    color: white;
     width: 15vh;
     height: 5vh;
-
     border-radius: 5px;
-
-    position: absolute;
-    left: 46.5%;
-    top: 48%;
+    font-size: 1em;
+    margin-top: 10px;
 }
 
-.Start-btn:hover{
+.Start-btn:hover {
     background-color: rgb(49, 129, 49);
     border: 1px solid white;
-
     cursor: pointer;
 }
 
-.Answ-txt{
-color: #ffffff;
-position: absolute;
-left: 50%;
-top: 40%;
-text-align: center;
+.Answ-txt {
+    color: white;
+    font-size: 1.2em;
+    margin-top: 15px;
 }
