@@ -1,0 +1,65 @@
+body{
+    background-color: #1b1b1b;
+}
+
+.Heading{
+position: absolute;
+
+left: 45%;
+color: white;
+
+font-size: 2.5em;
+}
+
+.Input-O1{
+    border: 2px solid rgb(35, 110, 35);
+    height: 4vh;
+    width: 15vw;
+    border-radius: 5px;
+
+    position: absolute;
+    left: 43%;
+    margin: 5px;
+    top: 33%;
+}
+
+.Input-O2{
+    border: 2px solid rgb(35, 110, 35);
+    height: 4vh;
+    width: 15vw;
+    border-radius: 5px;
+
+    position: absolute;
+    left: 43%;
+    margin: 5px;
+    top: 40%;
+}
+
+.Start-btn{
+    background-color: transparent;
+    border: 1px solid rgb(35, 110, 35);
+    color: #ffffff;
+    width: 15vh;
+    height: 5vh;
+
+    border-radius: 5px;
+
+    position: absolute;
+    left: 46.5%;
+    top: 48%;
+}
+
+.Start-btn:hover{
+    background-color: rgb(49, 129, 49);
+    border: 1px solid white;
+
+    cursor: pointer;
+}
+
+.Answ-txt{
+color: #ffffff;
+position: absolute;
+left: 50%;
+top: 40%;
+text-align: center;
+}
