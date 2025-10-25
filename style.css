@@ -1,56 +1,78 @@
+/* 🌑 Allgemeiner Stil */
 body {
-    background-color: #1b1b1b;
+    color: #ffffff;
+    background-color: #1f1f1f;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
-    margin: 0;
-    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🎛 Container für alles */
+.counter-container {
     text-align: center;
-}
-
-.Heading {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    width: 100%;
+    gap: 15px; /* Abstand zwischen Elementen */
+    padding: 40px;
+    border-radius: 20px;
 }
 
-input {
-    border: 2px solid rgb(35, 110, 35);
-    height: 4vh;
-    width: 15vw;
+/* 🕒 Zähler-Anzeige */
+#hour-display {
+    font-size: 44px;
+    margin-bottom: 20vh;
     border-radius: 5px;
-    text-align: center;
-    font-size: 1em;
+    color: rgb(255, 255, 255);
 }
 
-.Start-btn {
+/* 🔼 Up-Button */
+.up-btn {
+    color: #ffffff;
     background-color: transparent;
-    border: 1px solid rgb(35, 110, 35);
-    color: white;
-    width: 15vh;
-    height: 5vh;
-    border-radius: 5px;
-    font-size: 1em;
-    margin-top: 10px;
-}
-
-.Start-btn:hover {
-    background-color: rgb(49, 129, 49);
-    border: 1px solid white;
+    width: 220px;
+    height: 70px;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 0.2s ease;
     cursor: pointer;
 }
 
-.Answ-txt {
-    color: white;
-    font-size: 1.2em;
-    margin-top: 15px;
+.up-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 0 15px #ffffff;
+    transform: translateY(-3px);
+}
+
+/* 🔽 Down-Button */
+.down-btn {
+    color: #ff6666;
+    background-color: transparent;
+    width: 180px;
+    height: 55px;
+    border: 2px solid #ff6666;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.down-btn:hover {
+    background-color: #ff6666;
+    color: #1f1f1f;
+    box-shadow: 0 0 15px #ff6666;
+    transform: translateY(3px);
+    cursor: pointer;
+
+}
+
+.cooldown {
+    opacity: 0.5;
+    pointer-events: none;
+    transform: scale(0.98);
 }
