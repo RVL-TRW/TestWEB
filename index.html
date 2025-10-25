@@ -1,18 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
-   <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stunden Zähler</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00ff99">
+
+
+  <script src="main.js" defer></script>
 </head>
 <body>
- <h1 class="Heading">Let's decide!</h1>
+  <div class="counter-container">
+    <h3 id="hour-display">0h</h3>
+    <button id="up-btn" class="up-btn">+ 1 Stunde</button>
+    <button id="down-btn" class="down-btn">- 1 Stunde</button>
+  </div>
 
-    <input type="text" class="Input-O1" placeholder="Option 1">
-    <input type="text" class="Input-O2" placeholder="Option 2">
-
-    <button class="Start-btn">Start</button>
+  <script>
+    // Registriert den Service Worker
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js")
+        .then(() => console.log("Service Worker registriert"))
+        .catch(err => console.error("SW Fehler:", err));
+    }
+  </script>
 </body>
 </html>
